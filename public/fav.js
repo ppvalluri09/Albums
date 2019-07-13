@@ -6,14 +6,16 @@ var df = [];
 
 const cardList = document.querySelector('#list');
 
+// Add your keys here
+
 var firebaseConfig = {
-    apiKey: "AIzaSyC1gBlMhonoEsvKiWQdqH3lL1ouCV-Fc1k",
-    authDomain: "albums-45ea2.firebaseapp.com",
-    databaseURL: "https://albums-45ea2.firebaseio.com",
-    projectId: "albums-45ea2",
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
     storageBucket: "",
-    messagingSenderId: "732576057048",
-    appId: "1:732576057048:web:ccedbab3d2bcb3eb"
+    messagingSenderId: "",
+    appId: ""
 };
 
 firebase.initializeApp(firebaseConfig);
