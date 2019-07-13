@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Albums</title>
+    <link rel="stylesheet" href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" />
+    <script type="module" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar text-center>
+                <ion-title color="danger">Albums</ion-title>
+                <ion-buttons slot="end">
+                    <ion-button>
+                        <ion-icon name="share" slot="icon-only" color="danger"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+                <h4 class="ion-margin" style = "color: #f53d3d; display: inline-block">
+                    Favorites
+                </h4>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-md="6" offset-md="3">
+                        <ion-list id="list">
+
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-content>
+        <ion-toolbar>
+            <ion-segment color="danger">
+                <ion-segment-button value="favorites">
+                        <ion-label color="danger"><ion-icon name="star"></ion-icon></ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="search" onClick="location.href='index.html'">
+                        <ion-label color="danger"><ion-icon name="search"></ion-icon></ion-label>
+                </ion-segment-button>
+            </ion-segment>
+        </ion-toolbar>
+    </ion-app>
+    <script src="fav.js"></script>
+</body>
+</html>

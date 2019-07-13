@@ -1,0 +1,21 @@
+{
+  "name": "albums",
+  "version": "1.0.0",
+  "description": "Albums fetches artists and albums",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Node",
+    "JavaScript",
+    "iOS",
+    "Android"
+  ],
+  "author": "Valluri Pavan Preetham",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
