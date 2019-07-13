@@ -14,6 +14,7 @@ const alertCtrl = document.querySelector('#alert-controller');
 
 const search_bar = document.querySelector('#artist');
 
+// Add your keys here
 var firebaseConfig = {
     apiKey: "",
     authDomain: "",
