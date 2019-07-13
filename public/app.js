@@ -15,13 +15,13 @@ const alertCtrl = document.querySelector('#alert-controller');
 const search_bar = document.querySelector('#artist');
 
 var firebaseConfig = {
-    apiKey: "AIzaSyC1gBlMhonoEsvKiWQdqH3lL1ouCV-Fc1k",
-    authDomain: "albums-45ea2.firebaseapp.com",
-    databaseURL: "https://albums-45ea2.firebaseio.com",
-    projectId: "albums-45ea2",
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: ",
     storageBucket: "",
-    messagingSenderId: "732576057048",
-    appId: "1:732576057048:web:ccedbab3d2bcb3eb"
+    messagingSenderId: "",
+    appId: ""
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -183,30 +183,7 @@ function triggerLike(id) {
             console.log(error);
         });
     }
-    
-// ref.orderByChild('id').equalTo('-KTruPWrYO9WFj-TF8Ft')
-//     .once('value').then(function(snapshot) {
-//         snapshot.forEach(function(childSnapshot) {
-//         ref.child(childSnapshot.key).remove();
-//     });
-// });
-}
 
-// function removeData(id) {
-//     ref.on('value', (data_) => {
-//         fields = data_.val();
-//         keys = Object.keys(fields);
-//         ref.orderByChild('id').equalTo(trackId[id])
-//             .once('value').then(function(snapshot) {
-//                 snapshot.forEach(function(childSnapshot) {
-//                     ref.child(childSnapshot.key).remove();
-//                 });
-//             });
-//             return false;
-//     }, (error) => {
-//         console.log(error);
-//     });
-// }
 
 function triggerPlay(url) {
     window.open(url, '_blank');
